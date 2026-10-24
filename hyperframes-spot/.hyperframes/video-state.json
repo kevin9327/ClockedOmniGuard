@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "historyId": "4be291ed-6eff-4a74-b43a-b07d76af0d21",
+  "currentRevision": "8b644d03-7002-4b58-8aaf-93120a766287",
+  "pendingChanges": false,
+  "files": {
+    "assets/clocked_tab1_adversarial.png": {
+      "hash": "0e109fb8fad389dea4d12d7487a44641f399847e1813d8c2ef7976b5ec0cea2f",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\0e\\0e109fb8fad389dea4d12d7487a44641f399847e1813d8c2ef7976b5ec0cea2f"
+    },
+    "assets/clocked_tab1_pipeline.png": {
+      "hash": "6914e0115cc877a176162f5ed17ff8c14110a901009d70f18c6024859cdd2de3",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\69\\6914e0115cc877a176162f5ed17ff8c14110a901009d70f18c6024859cdd2de3"
+    },
+    "assets/clocked_tab2_group2.png": {
+      "hash": "a4b5d218d6cb19d4f0534f7357fcbd08e47654946dd3fe25efea24b2bf0a1a53",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\a4\\a4b5d218d6cb19d4f0534f7357fcbd08e47654946dd3fe25efea24b2bf0a1a53"
+    },
+    "assets/clocked_tab3_group1.png": {
+      "hash": "f5231845935a0dd38cff6faaf445bb4b1dd2a3958a042cb68059f4141addbe85",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\f5\\f5231845935a0dd38cff6faaf445bb4b1dd2a3958a042cb68059f4141addbe85"
+    },
+    "assets/clocked_tab4_group3.png": {
+      "hash": "711dc65382495d77c6031aa72861a078995fa823c9a768fd22c963cc8907e150",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\71\\711dc65382495d77c6031aa72861a078995fa823c9a768fd22c963cc8907e150"
+    },
+    "assets/clocked_tab5_telemetry.png": {
+      "hash": "4a9469e0dc777149380dc30434a5846c7162d5b20ae5f0393091fef3c91fbdfc",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\4a\\4a9469e0dc777149380dc30434a5846c7162d5b20ae5f0393091fef3c91fbdfc"
+    },
+    "index.html": {
+      "hash": "9e2d77cd13f90616e971fd9ab763542cb2261fdf9e7d1c32dba7f39d6d3f7ce9",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\9e\\9e2d77cd13f90616e971fd9ab763542cb2261fdf9e7d1c32dba7f39d6d3f7ce9"
+    },
+    "assets/clocked_master_mix.mp3": {
+      "hash": "6b158f082868acc3e15b21a108bcbdf7512c1e9b6d69534b84836d3072ee295c",
+      "content": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\6b\\6b158f082868acc3e15b21a108bcbdf7512c1e9b6d69534b84836d3072ee295c"
+    }
+  },
+  "revisions": {
+    "fb58724f-f002-4862-86d8-8edd6b2bcc47": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792852303946,
+      "endedAt": 1792852303947,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\c4\\c44bdfb269220649aedaffbcca349dbd2a458daa1a9e25341db1c9a00515d7da",
+          "after": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\da\\da0a3a348e41318b1d7ec1ed74daba3b7972311c3364b5d2db2c1e289b4e7b08"
+        }
+      }
+    },
+    "8b644d03-7002-4b58-8aaf-93120a766287": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792852368186,
+      "endedAt": 1792852368187,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\da\\da0a3a348e41318b1d7ec1ed74daba3b7972311c3364b5d2db2c1e289b4e7b08",
+          "after": "C:\\Users\\swsz9\\.cache\\hyperframes\\history\\4be291ed-6eff-4a74-b43a-b07d76af0d21\\blobs\\9e\\9e2d77cd13f90616e971fd9ab763542cb2261fdf9e7d1c32dba7f39d6d3f7ce9"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "aaf2e684-f364-4236-a5a8-b9a2b11e0bdd"
+    },
+    "revisions": {
+      "fb58724f-f002-4862-86d8-8edd6b2bcc47": [
+        {
+          "id": "6be1e671-1721-47ac-ac43-9fa55e1b27a7",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792852315841,
+          "contentHash": "a09635693d855003b4074ca002d62dcba282f8de65a84068258e8ca23b342197",
+          "revision": "fb58724f-f002-4862-86d8-8edd6b2bcc47",
+          "inputFingerprint": "dc09c39abbdd42d0af4c1d3a95711c83768999a700f273aea1744a5eee9248e2",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "15489664-5012-45db-b9fd-9b0f7782dae3"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "aaf2e684-f364-4236-a5a8-b9a2b11e0bdd",
+        "scope": "project",
+        "report": "c:\\Users\\swsz9\\Downloads\\WindowexeHideWindow_2026-03-21\\Distributables\\ClockedOmniGuard\\hyperframes-spot\\.hyperframes\\artifacts\\checks\\aaf2e684-f364-4236-a5a8-b9a2b11e0bdd.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": true,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792852270748,
+        "contentHash": "9474944c741831fd79936936d2759a47f4e40f84035f65025960b0b4c6b2cd0b",
+        "revision": null,
+        "inputFingerprint": "da6df6e737d9b699862492a955127e07adf51b7b670e82d186797eb956295fe1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "15489664-5012-45db-b9fd-9b0f7782dae3",
+      "completedAt": 1792852419210,
+      "output": "C:\\Users\\swsz9\\.gemini\\antigravity\\brain\\c9e5e770-b6cf-4fe7-a4b3-7e0ca322c2a8\\ClockedOmniGuard_Flagship_Demo_1080p.mp4",
+      "status": "completed",
+      "revision": "8b644d03-7002-4b58-8aaf-93120a766287"
+    },
+    "retainedRevisions": [
+      "8b644d03-7002-4b58-8aaf-93120a766287"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

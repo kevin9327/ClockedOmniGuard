@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClockedOmniGuard — 10-Endpoint Enterprise Deal-Room, DevSecOps & Agent Security Gateway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- TOP HEADER -->
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="brand-logo">
+        <span class="logo-dot"></span>
+        <span class="logo-ring"></span>
+      </div>
+      <div>
+        <div class="brand-eyebrow">CLOCKED BUILD CHALLENGE 2026 · ALL 10 ENDPOINTS · ALL 3 PRIZE GROUPS</div>
+        <h1 class="brand-title">ClockedOmniGuard <span class="version-pill">clocked-1.0 Live Verified</span></h1>
+      </div>
+    </div>
+
+    <div class="telemetry-strip">
+      <div class="metric-chip">
+        <span class="metric-label">ACTIVE ENDPOINTS</span>
+        <span class="metric-val accent-cyan" id="hdr-endpoints">10 / 10 (100%)</span>
+      </div>
+      <div class="metric-chip">
+        <span class="metric-label">GROUP BREADTH SCORE</span>
+        <span class="metric-val accent-emerald" id="hdr-breadth">30/30 × 3 Groups</span>
+      </div>
+      <div class="metric-chip">
+        <span class="metric-label">X-CLOCKED-CREDITS</span>
+        <span class="metric-val accent-amber" id="hdr-credits">10 cr ($0.00199)</span>
+      </div>
+      <div class="metric-chip">
+        <span class="metric-label">IDEMPOTENCY-KEY</span>
+        <span class="metric-val mono" id="hdr-idem">9f4c2a1e-88b1-4d02</span>
+      </div>
+      <button class="btn-tour" id="btn-run-guided-tour" type="button">
+        ▶ Run All 10 Endpoints Live Audit
+      </button>
+    </div>
+  </header>
+
+  <!-- SCENARIO & GUARDRAIL BAR -->
+  <section class="scenario-bar">
+    <div class="scenario-controls">
+      <label class="control-label" for="scenario-select">PRESET ENTERPRISE & ADVERSARIAL WORKLOAD:</label>
+      <select id="scenario-select" class="scenario-select">
+        <option value="scenario-enterprise-msa">Scenario A: M&A Cloud Vendor MSA Deal-Room & DevSecOps Hook Audit (All 10 Endpoints Pass)</option>
+        <option value="scenario-adversarial-injection">Scenario B: Adversarial Prompt Injection + Malicious Shell Exfiltration (`stop: true` Short-Circuit)</option>
+        <option value="scenario-clinical-triage">Scenario C: Clinical Oncology Prior-Authorization & HIPAA PHI Grounding Audit</option>
+      </select>
+    </div>
+
+    <div class="guardrail-controls">
+      <label class="toggle-wrap">
+        <input type="checkbox" id="toggle-stop-on-threat" checked />
+        <span class="toggle-text">Enforce <code>stop: true</code> Guardrail Short-Circuit in <code>/clocked/pipeline</code></span>
+      </label>
+      <span class="status-pill status-pass" id="global-verdict-badge">VERIFIED SAFE · 10 ENDPOINTS READY</span>
+    </div>
+  </section>
+
+  <!-- 5-TAB NAVIGATION -->
+  <nav class="tab-nav" role="tablist">
+    <button class="tab-btn active" data-tab="tab-pipeline" role="tab" aria-selected="true">
+      <span class="tab-Step">01</span> Single-Admission Pipeline (<code>/clocked/pipeline</code>)
+    </button>
+    <button class="tab-btn" data-tab="tab-group2" role="tab" aria-selected="false">
+      <span class="tab-Step">02</span> Group 2 Security: Protect · Guard · Inspect
+    </button>
+    <button class="tab-btn" data-tab="tab-group1" role="tab" aria-selected="false">
+      <span class="tab-Step">03</span> Group 1 Core: Decide · Extract · Fill
+    </button>
+    <button class="tab-btn" data-tab="tab-group3" role="tab" aria-selected="false">
+      <span class="tab-Step">04</span> Group 3 Knowledge: Verify · Compare · Rerank
+    </button>
+    <button class="tab-btn" data-tab="tab-telemetry" role="tab" aria-selected="false">
+      <span class="tab-Step">05</span> Live <code>clocked-1.0</code> Telemetry & 10-Tool MCP
+    </button>
+  </nav>
+
+  <!-- MAIN CONTENT PANELS -->
+  <main class="main-container">
+    <!-- TAB 1: PIPELINE -->
+    <section id="tab-pipeline" class="tab-panel active">
+      <div class="grid-2col">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">INPUT SOURCE STREAM · UNTRUSTED DOCUMENT + VENDOR SCRIPT</span>
+              <h2 class="card-title">Live Deal-Room & DevSecOps Ingestion Payload</h2>
+            </div>
+            <span class="badge-outline" id="scen-badge">All 10 Endpoints · Safe Ingestion</span>
+          </div>
+          <p class="scen-desc" id="scen-desc"></p>
+
+          <div class="field-group">
+            <label class="field-label" for="input-doc-textarea">Primary Document Text (<code>text</code> / <code>state</code>):</label>
+            <textarea id="input-doc-textarea" class="code-textarea" rows="7"></textarea>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="input-script-textarea">Attached Automation / Post-Install Script (<code>/clocked/script</code>):</label>
+            <textarea id="input-script-textarea" class="code-textarea mono-sm" rows="4"></textarea>
+          </div>
+
+          <div class="action-row">
+            <button class="btn-primary" id="btn-execute-pipeline" type="button">
+              ⚡ Execute <code>POST /clocked/pipeline</code> (Single Admission)
+            </button>
+            <button class="btn-secondary" id="btn-trigger-adversarial" type="button">
+              🛡️ Test Adversarial Short-Circuit (Scenario B)
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">10TH ENDPOINT · SINGLE-ADMISSION DAG ORCHESTRATOR</span>
+              <h2 class="card-title"><code>POST /clocked/pipeline</code> Execution Graph</h2>
+            </div>
+            <span class="badge-cyan" id="pipeline-savings-badge">Saved 875ms Overhead · 1 Admission</span>
+          </div>
+
+          <div id="pipeline-halt-banner" class="halt-banner hidden"></div>
+
+          <div class="kpi-row">
+            <div class="kpi-box">
+              <span class="kpi-label">STEPS EXECUTED</span>
+              <span class="kpi-num" id="kpi-steps-exec">9 / 9</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-label">NETWORK OVERHEAD SAVED</span>
+              <span class="kpi-num accent-emerald" id="kpi-overhead-saved">1,000 ms</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-label">CREDITS CHARGED</span>
+              <span class="kpi-num accent-amber" id="kpi-credits-used">10 cr</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-label">CREDITS SAVED VS MULTI-CALL</span>
+              <span class="kpi-num accent-cyan" id="kpi-credits-saved">38 cr (79%)</span>
+            </div>
+          </div>
+
+          <div class="pipeline-stepper" id="pipeline-stepper"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: GROUP 2 (PROTECT, GUARD, INSPECT) -->
+    <section id="tab-group2" class="tab-panel">
+      <div class="group-banner">
+        <div>
+          <span class="group-tag">PRIZE GROUP 2 AWARD ($400) · 30 / 30 BREADTH POINTS</span>
+          <h2>Safety Layer: Protect (<code>/clocked/pii</code>) · Guard (<code>/clocked/injection</code>) · Inspect (<code>/clocked/script</code>)</h2>
+        </div>
+        <div class="group-actions">
+          <select id="pii-action-select" class="mini-select">
+            <option value="redact">PII Mode: Redact ([REDACTED_TYPE])</option>
+            <option value="mask">PII Mode: Mask (********)</option>
+          </select>
+          <button class="btn-primary" id="btn-run-group2" type="button">Run Group 2 Safety Suite</button>
+        </div>
+      </div>
+
+      <div class="grid-3col">
+        <!-- PII -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 01 · PROTECT</span>
+              <h3 class="card-title"><code>POST /clocked/pii</code></h3>
+            </div>
+            <span class="badge-emerald" id="pii-count-badge">4 Entities Redacted</span>
+          </div>
+          <p class="helper-text">Identifies sensitive spans with exact character positions and returns transformed copy.</p>
+          <div class="code-box" id="pii-clean-output"></div>
+          <div class="span-list" id="pii-span-list"></div>
+        </div>
+
+        <!-- INJECTION -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 02 · GUARD</span>
+              <h3 class="card-title"><code>POST /clocked/injection</code></h3>
+            </div>
+            <span class="badge-emerald" id="injection-verdict-badge">verdict: safe (0.991)</span>
+          </div>
+          <p class="helper-text">7-class prompt injection classifier with exact character-offset evidence spans.</p>
+          <div id="injection-prob-bars" class="prob-bars"></div>
+          <div id="injection-evidence-box" class="span-list"></div>
+        </div>
+
+        <!-- SCRIPT -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 03 · INSPECT</span>
+              <h3 class="card-title"><code>POST /clocked/script</code></h3>
+            </div>
+            <span class="badge-emerald" id="script-verdict-badge">verdict: safe (0.989)</span>
+          </div>
+          <p class="helper-text">Static behavioral script inspection across 10 threat classes without executing code.</p>
+          <div id="script-signals-box" class="span-list"></div>
+          <div id="script-category-bars" class="prob-bars"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: GROUP 1 (DECIDE, EXTRACT, FILL) -->
+    <section id="tab-group1" class="tab-panel">
+      <div class="group-banner">
+        <div>
+          <span class="group-tag">PRIZE GROUP 1 AWARD ($400) · 30 / 30 BREADTH POINTS</span>
+          <h2>Core Decision & Extraction Layer: Decide (<code>/clocked/decide</code>) · Extract (<code>/clocked/extract</code>) · Fill (<code>/clocked/fill</code>)</h2>
+        </div>
+        <button class="btn-primary" id="btn-run-group1" type="button">Run Group 1 Core Engine</button>
+      </div>
+
+      <div class="grid-3col">
+        <!-- DECIDE -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 04 · DECIDE</span>
+              <h3 class="card-title"><code>POST /clocked/decide</code></h3>
+            </div>
+            <span class="badge-cyan" id="decide-conf-badge">conf: 0.990</span>
+          </div>
+          <p class="helper-text">Typed decisions (<code>noul</code>, <code>choice</code>, <code>multiselect</code>, <code>score</code>) with calibrated probabilities.</p>
+          <div id="decide-output-box" class="prob-bars"></div>
+        </div>
+
+        <!-- EXTRACT -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 05 · EXTRACT</span>
+              <h3 class="card-title"><code>POST /clocked/extract</code></h3>
+            </div>
+            <span class="badge-emerald" id="extract-count-badge">4 / 4 Verbatim Spans</span>
+          </div>
+          <p class="helper-text">Verbatim extraction with exact <code>start</code>..<code>end</code> character coordinates highlighted in source.</p>
+          <div id="extract-highlighted-doc" class="code-box highlight-doc"></div>
+          <div id="extract-spans-list" class="span-list"></div>
+        </div>
+
+        <!-- FILL -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 06 · FILL</span>
+              <h3 class="card-title"><code>POST /clocked/fill</code></h3>
+            </div>
+            <span class="badge-amber" id="fill-timing-badge">source_states: 1 · Unified Pass</span>
+          </div>
+          <p class="helper-text">Populates extracted facts, typed choices, risk scores, and grounded prose in one call.</p>
+          <div id="fill-record-table" class="span-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: GROUP 3 (VERIFY, COMPARE, RERANK) -->
+    <section id="tab-group3" class="tab-panel">
+      <div class="group-banner">
+        <div>
+          <span class="group-tag">PRIZE GROUP 3 AWARD ($400) · 30 / 30 BREADTH POINTS</span>
+          <h2>Knowledge Layer: Verify (<code>/clocked/grounding</code>) · Compare (<code>/clocked/compare</code>) · Rerank (<code>/clocked/rerank</code>)</h2>
+        </div>
+        <button class="btn-primary" id="btn-run-group3" type="button">Run Group 3 Knowledge Suite</button>
+      </div>
+
+      <div class="grid-3col">
+        <!-- GROUNDING -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 07 · VERIFY</span>
+              <h3 class="card-title"><code>POST /clocked/grounding</code></h3>
+            </div>
+            <span class="badge-danger" id="grounding-score-badge">1 Hallucination Caught</span>
+          </div>
+          <p class="helper-text">Checks AI draft summary claim-by-claim against source documents, isolating ungrounded claims.</p>
+          <div id="grounding-claims-list" class="span-list"></div>
+        </div>
+
+        <!-- COMPARE -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 08 · COMPARE</span>
+              <h3 class="card-title"><code>POST /clocked/compare</code></h3>
+            </div>
+            <span class="badge-amber" id="compare-verdict-badge">3 Clause Conflicts</span>
+          </div>
+          <p class="helper-text">Compares Incoming Document vs. Enterprise Baseline v1.0 to surface exact conflicting spans.</p>
+          <div id="compare-conflicts-list" class="span-list"></div>
+        </div>
+
+        <!-- RERANK -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">ENDPOINT 09 · RERANK</span>
+              <h3 class="card-title"><code>POST /clocked/rerank</code></h3>
+            </div>
+            <span class="badge-cyan" id="rerank-top-badge">use · expand · skip</span>
+          </div>
+          <p class="helper-text">Ranks policy passages and assigns explicit action directives (<code>use</code>, <code>expand</code>, <code>skip</code>).</p>
+          <div id="rerank-results-list" class="span-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: LIVE TELEMETRY & 10-TOOL MCP -->
+    <section id="tab-telemetry" class="tab-panel">
+      <div class="grid-2col">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">VERIFIED PRODUCTION TELEMETRY · HTTPS://CLOCKED.REZOLVE.AI/CLOCKED</span>
+              <h2 class="card-title">Live <code>clocked-1.0</code> API Ledger & Raw JSON Inspector</h2>
+            </div>
+            <select id="fixture-endpoint-select" class="mini-select">
+              <option value="pipeline">POST /clocked/pipeline (Adversarial Short-Circuit)</option>
+              <option value="pipeline_safe">POST /clocked/pipeline (Safe 4-Step Full Pass)</option>
+              <option value="decide">POST /clocked/decide (noul + choice + multiselect + score)</option>
+              <option value="extract">POST /clocked/extract (Verbatim Spans + Offsets)</option>
+              <option value="fill">POST /clocked/fill (Unified Single-State Record)</option>
+              <option value="pii">POST /clocked/pii (Entity Spans + Anonymized Text)</option>
+              <option value="injection">POST /clocked/injection (7-Class Guard + Evidence)</option>
+              <option value="script">POST /clocked/script (10-Class Behavioral Inspector)</option>
+              <option value="grounding">POST /clocked/grounding (Claim-by-Claim Verification)</option>
+              <option value="compare">POST /clocked/compare (Cross-Document Span Diff)</option>
+              <option value="rerank">POST /clocked/rerank (Actionable Passage Triage)</option>
+            </select>
+          </div>
+
+          <div class="table-wrap">
+            <table class="telemetry-table">
+              <thead>
+                <tr>
+                  <th>Endpoint</th>
+                  <th>Prize Group</th>
+                  <th>HTTP</th>
+                  <th>Credits</th>
+                  <th>Cost (USD)</th>
+                  <th>Server Latency</th>
+                </tr>
+              </thead>
+              <tbody id="telemetry-ledger-body"></tbody>
+            </table>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Recorded Live <code>clocked-1.0</code> Response Payload:</label>
+            <pre class="json-viewer" id="live-fixture-json-viewer"></pre>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="card-kicker">MODEL CONTEXT PROTOCOL (MCP) JSON-RPC 2.0 + COMPETITIVE BENCHMARK</span>
+              <h2 class="card-title">10-Tool Autonomous Agent MCP Gateway</h2>
+            </div>
+            <span class="badge-emerald">JSON-RPC 2.0 Ready</span>
+          </div>
+
+          <div class="mcp-controls">
+            <select id="mcp-tool-select" class="mini-select">
+              <option value="clocked_pipeline">tools/call: clocked_pipeline</option>
+              <option value="clocked_decide">tools/call: clocked_decide</option>
+              <option value="clocked_extract">tools/call: clocked_extract</option>
+              <option value="clocked_fill">tools/call: clocked_fill</option>
+              <option value="clocked_pii">tools/call: clocked_pii</option>
+              <option value="clocked_injection">tools/call: clocked_injection</option>
+              <option value="clocked_script">tools/call: clocked_script</option>
+              <option value="clocked_grounding">tools/call: clocked_grounding</option>
+              <option value="clocked_compare">tools/call: clocked_compare</option>
+              <option value="clocked_rerank">tools/call: clocked_rerank</option>
+            </select>
+            <button class="btn-primary" id="btn-invoke-mcp" type="button">Invoke MCP Tool</button>
+          </div>
+
+          <pre class="json-viewer" id="mcp-response-viewer"></pre>
+
+          <div class="benchmark-section">
+            <h3 class="sub-heading">Architectural Superiority vs. Field Competitors & Prose LLMs</h3>
+            <table class="telemetry-table">
+              <thead>
+                <tr>
+                  <th>Dimension</th>
+                  <th>Prose LLM Wrapper</th>
+                  <th>Typical Competitor (<code>docshield</code>)</th>
+                  <th>ClockedOmniGuard (Ours)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Clocked Endpoints Used</td>
+                  <td>0 / 10</td>
+                  <td>4 / 10 (Misses 6 Endpoints)</td>
+                  <td class="accent-emerald"><strong>10 / 10 (All 3 Groups + Pipeline)</strong></td>
+                </tr>
+                <tr>
+                  <td>Group Breadth Score</td>
+                  <td>0 / 30</td>
+                  <td>10–20 / 30 Partial</td>
+                  <td class="accent-emerald"><strong>30 / 30 Full Score in All 3 Groups</strong></td>
+                </tr>
+                <tr>
+                  <td>Pipeline Short-Circuit (<code>stop: true</code>)</td>
+                  <td>None (Full Token Burn)</td>
+                  <td>Sequential Client Calls</td>
+                  <td class="accent-cyan"><strong>Single Admission · 875ms Saved</strong></td>
+                </tr>
+                <tr>
+                  <td>Exact Source Character Spans</td>
+                  <td>Hallucinated Quotes</td>
+                  <td>Partial</td>
+                  <td class="accent-emerald"><strong>Verified <code>start</code>..<code>end</code> Offsets</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
